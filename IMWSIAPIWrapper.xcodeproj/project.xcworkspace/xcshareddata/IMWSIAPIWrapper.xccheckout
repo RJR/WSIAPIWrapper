@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>47115237-44D6-4D3F-A456-D8D69CDDBD48</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IMWSIAPIWrapper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9993CAC2-0C82-452C-975C-C70C7B1ADB66</key>
+		<string>https://github.com/RJR/WSIAPIWrapper.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IMWSIAPIWrapper.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9993CAC2-0C82-452C-975C-C70C7B1ADB66</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RJR/WSIAPIWrapper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9993CAC2-0C82-452C-975C-C70C7B1ADB66</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9993CAC2-0C82-452C-975C-C70C7B1ADB66</string>
+			<key>IDESourceControlWCCName</key>
+			<string>develop</string>
+		</dict>
+	</array>
+</dict>
+</plist>
