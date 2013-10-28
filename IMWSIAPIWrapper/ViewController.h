@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UISlider *transperancySlider;
 @property (strong, nonatomic) IBOutlet UIButton *startStopLoopingBt;
 @property (nonatomic, assign) BOOL isLooping;
+@property (strong, nonatomic) IBOutlet UIView *legendView;
 
 -(IBAction)showLayers:(id)sender;
 -(IBAction)spotLocation:(id)sender;

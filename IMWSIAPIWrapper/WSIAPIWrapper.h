@@ -37,6 +37,7 @@ static const double kMinDistanceDeltaToUpdateTrafficIncidentsMeters = 100.0;
 
 @protocol WSISdKWrapperDelegate
 - (void)applyTransperancy:(NSUInteger)transperancy;
+- (void)unitDisplay:(UIView*)legendview;
 @end
 
 @interface WSIAPIWrapper : NSObject<WSISDKDelegate,MKMapViewDelegate>

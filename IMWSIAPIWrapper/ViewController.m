@@ -25,6 +25,7 @@
     [_wsiWrap setDelegate:self];
     [_mapContainerView addSubview:[_wsiWrap MapView]];
     
+    
 }
 
 
@@ -85,6 +86,18 @@
 -(void)applyTransperancy:(NSUInteger)transperancy
 {
     [_transperancySlider setValue:transperancy animated:YES];
+}
+
+-(void)unitDisplay:(UIView*)legendview
+{
+    [_mapContainerView bringSubviewToFront:_legendView];
+    
+    CGRect legendViewFrame = legendview.frame;
+	legendViewFrame.origin.x = 0.5*(_legendView.frame.size.width - legendViewFrame.size.width);
+	legendViewFrame.origin.y = 0.5*(_legendView.frame.size.height - legendViewFrame.size.height);
+	legendview.frame = legendViewFrame;
+	[_legendView addSubview:legendview];
+	
 }
 
 - (void)didReceiveMemoryWarning

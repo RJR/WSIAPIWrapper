@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
+                <outlet property="legendView" destination="K2F-AG-jjn" id="eMP-R7-3R3"/>
                 <outlet property="mapContainerView" destination="z5s-bK-mDD" id="5yE-Gg-yKV"/>
                 <outlet property="startStopLoopingBt" destination="Pwp-z6-5Wa" id="9t3-6V-PYm"/>
                 <outlet property="transperancySlider" destination="vDf-dT-h7C" id="pdw-Ru-ost"/>
@@ -20,6 +21,13 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z5s-bK-mDD">
                     <rect key="frame" x="0.0" y="1" width="320" height="263"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2F-AG-jjn">
+                            <rect key="frame" x="7" y="204" width="220" height="46"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22l-65-8l5">

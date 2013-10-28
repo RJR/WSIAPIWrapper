@@ -82,8 +82,11 @@
         
     }
     [_delegate applyTransperancy:[_activeLayer getTransparency]];
-    
-    
+    UIView *legendView=[_wsiSDK getLegendViewForLayer:_activeLayer unitPreferences:ENGLISH];
+    if (legendView)
+	{
+        [_delegate unitDisplay:(UIView*)legendView];
+    }
 }
 
 - (NSMutableArray *)getCurrentObjectsArray
