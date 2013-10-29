@@ -16,7 +16,7 @@
 {
     
 }
-@property (strong, nonatomic)NSMutableArray *overlaysArr;
+@property (strong, nonatomic)NSArray *overlaysArr;
 @property (strong, nonatomic)NSMutableArray *selectedOverlays;
 @property (strong, nonatomic)IBOutlet UITableView *layersTV;
 @property (strong, nonatomic)id<OverlaySettingsDelegate> delegate;

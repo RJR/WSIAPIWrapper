@@ -127,6 +127,54 @@
 			name = NIB;
 			sourceTree = "<group>";
 		};
+		35332566181F9DAF009E0377 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				35FA60ED1819063C001A862A /* Localization */,
+				3515B2E41817B0AC009540C0 /* Utils */,
+				35D1321F1818015000567A76 /* Model */,
+				35332567181F9EC3009E0377 /* View */,
+				35332568181F9ECE009E0377 /* Controller */,
+				3515B2EC1817B5D9009540C0 /* NIB */,
+				F17BFBCF1817953B00DB420B /* AppDelegate.h */,
+				F17BFBD01817953B00DB420B /* AppDelegate.m */,
+				F17BFBD21817953B00DB420B /* Main.storyboard */,
+				F17BFBE51817953C00DB420B /* IMWSIAPIWrapperTests */,
+				F17BFBD81817953C00DB420B /* Images.xcassets */,
+				F17BFBC71817953B00DB420B /* Supporting Files */,
+				F17BFBBF1817953B00DB420B /* Frameworks */,
+				F17BFBBE1817953B00DB420B /* Products */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		35332567181F9EC3009E0377 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		35332568181F9ECE009E0377 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F17BFBD51817953B00DB420B /* ViewController.h */,
+				F17BFBD61817953B00DB420B /* ViewController.m */,
+				3515B2F11817CBE7009540C0 /* SettingViewController.h */,
+				3515B2F21817CBE7009540C0 /* SettingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		35332569181F9F54009E0377 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				3515B2DD18179EF4009540C0 /* WSIAPIWrapper.h */,
+				3515B2DE18179EF4009540C0 /* WSIAPIWrapper.m */,
+			);
+			name = Wrapper;
+			sourceTree = "<group>";
+		};
 		35D1321F1818015000567A76 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,9 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				F17BFBC61817953B00DB420B /* IMWSIAPIWrapper */,
-				F17BFBE51817953C00DB420B /* IMWSIAPIWrapperTests */,
-				F17BFBBF1817953B00DB420B /* Frameworks */,
-				F17BFBBE1817953B00DB420B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +204,7 @@
 				F17BFBDE1817953C00DB420B /* IMWSIAPIWrapperTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F17BFBBF1817953B00DB420B /* Frameworks */ = {
@@ -175,26 +221,14 @@
 				F17BFBDF1817953C00DB420B /* XCTest.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F17BFBC61817953B00DB420B /* IMWSIAPIWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				35FA60ED1819063C001A862A /* Localization */,
-				35D1321F1818015000567A76 /* Model */,
-				3515B2EC1817B5D9009540C0 /* NIB */,
-				3515B2E41817B0AC009540C0 /* Utils */,
-				F17BFBCF1817953B00DB420B /* AppDelegate.h */,
-				F17BFBD01817953B00DB420B /* AppDelegate.m */,
-				F17BFBD21817953B00DB420B /* Main.storyboard */,
-				F17BFBD51817953B00DB420B /* ViewController.h */,
-				F17BFBD61817953B00DB420B /* ViewController.m */,
-				F17BFBD81817953C00DB420B /* Images.xcassets */,
-				F17BFBC71817953B00DB420B /* Supporting Files */,
-				3515B2DD18179EF4009540C0 /* WSIAPIWrapper.h */,
-				3515B2DE18179EF4009540C0 /* WSIAPIWrapper.m */,
-				3515B2F11817CBE7009540C0 /* SettingViewController.h */,
-				3515B2F21817CBE7009540C0 /* SettingViewController.m */,
+				35332569181F9F54009E0377 /* Wrapper */,
+				35332566181F9DAF009E0377 /* Demo */,
 			);
 			path = IMWSIAPIWrapper;
 			sourceTree = "<group>";
@@ -217,7 +251,7 @@
 				F17BFBE61817953C00DB420B /* Supporting Files */,
 			);
 			path = IMWSIAPIWrapperTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		F17BFBE61817953C00DB420B /* Supporting Files */ = {
 			isa = PBXGroup;

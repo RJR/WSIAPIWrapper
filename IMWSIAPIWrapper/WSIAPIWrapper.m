@@ -12,6 +12,12 @@
 
 #import "WSIAPIWrapper.h"
 
+#ifdef IS_TRAFFICSDK_APP
+#import <WSISDKTraffic/WSISDK.h>
+#import <WSISDKTraffic/WSIMapObjectWrapper.h>
+static NSString * const kSDKTypeLabel = @"TRAFFIC SDK";
+#endif
+
 @implementation WSIAPIWrapper
 
 
@@ -30,6 +36,7 @@
      animated:NO];
     [_wsiSDK setPreferredUnits:ENGLISH];
     [_wsiSDK.mapSDKView setMapType:kDefaultMapType];
+    _currentUnitPreference=ENGLISH;
     return _wsiSDK.mapSDKView;
 }
 
@@ -39,7 +46,6 @@
     
 	// IMPORTANT: ENABLE LINE BELOW AND REPLACE PARAMETERS WITH WSI-PROVIDED VALUES!
    
-   // NSMutableArray *geoObjectArr = [self getCurrentObjectsArray];
     for(NSString *overlay in categories)
     {
         for(WSIMapObjectWrapper *geoObject in _layersArray)
@@ -50,6 +56,7 @@
                 _activeLayer=geoObject;
                 _activeLayerhasFuture=[_activeLayer hasFuture];
                 BOOL enabling = !geoObject.isActive;
+                [self updateWeatherUnits:enabling];
                 [_wsiSDK selectActiveLayer:(enabling ? geoObject : nil)];
                 break;
                 
@@ -82,39 +89,25 @@
         
     }
     [_delegate applyTransperancy:[_activeLayer getTransparency]];
-    UIView *legendView=[_wsiSDK getLegendViewForLayer:_activeLayer unitPreferences:ENGLISH];
+}
+
+- (void) updateWeatherUnits:(BOOL)haveLayer
+{
+    UIView *legendView=[_wsiSDK getLegendViewForLayer:_activeLayer unitPreferences:_currentUnitPreference];
     if (legendView)
 	{
-        [_delegate unitDisplay:(UIView*)legendView];
+        [_delegate unitDisplay:haveLayer?(UIView*)legendView:nil];
     }
 }
 
-- (NSMutableArray *)getCurrentObjectsArray
+- (void)switchUnits
 {
-    NSMutableArray *mapObjectArray=[[NSMutableArray alloc]init];
-    [mapObjectArray addObjectsFromArray:_layersArray];
-    [mapObjectArray addObjectsFromArray:_overlaysArray];
-    [mapObjectArray addObjectsFromArray:_categoriesArray];
-    return mapObjectArray;
+    _currentUnitPreference=_currentUnitPreference==ENGLISH?METRIC:ENGLISH;
+    [_wsiSDK setPreferredUnits:_currentUnitPreference];
+    [self updateWeatherUnits:YES];
 }
 
-- (NSMutableArray *)getCurrentObjectsArraywithType:(NSInteger)overlayType
-{
-    //	switch (overlayType)
-    //	{
-    //        case overlayTypeLayer:
-    //            return _layersArray;
-    //        case overlayTypeOverlay:
-    //            return _overlaysArray;
-    //        case overlayTypeCategory:
-    //            return _categoriesArray;
-    //	}
-        return nil;
-    
-}
-
-
--(NSMutableArray *)overlaysList
+-(NSArray *)overlaysList
 {
     NSMutableArray *fullLayersArray=[[NSMutableArray alloc] init];
     for(WSIMapObjectWrapper *geoObj in _layersArray)
@@ -135,10 +128,6 @@
 	}
 	else
 	{
-//		if ([_activeLayer hasFuture] && _futureSelected)
-//			[_startStopLoopingButton setTitle:@"Loop Future" forState:UIControlStateNormal];
-//		else
-//			[_startStopLoopingButton setTitle:@"Loop Past" forState:UIControlStateNormal];
 	   	[_wsiSDK stopLoopingForActiveLayer];
 	}
 }
@@ -169,7 +158,6 @@
         _pinAnnotation = [[WSIPinAnnotation alloc] initWithCoordinate:_wsiSDK.mapSDKView.region.center];
         [_wsiSDK.mapSDKView addAnnotation:_pinAnnotation];
     }
-    // _wsiSDK.mapSDKView.userLocation=locationName;
     MKMapView *mapView = _wsiSDK.mapSDKView;
 	mapView.showsUserLocation = YES;
 	[self updateUserLocationVisibility];
@@ -202,12 +190,9 @@
     {
         NSLog(@"Not future for this layer");
     }
-	//_isLooping = NO;}
+
 }
-- (void)setLayerTime:(NSString *)gmtTime
-{
-	//NSString *localTimeString = [self convertGMTToLocal:gmtTime];
-}
+
 
 - (NSString *)convertGMTToLocal:(NSString *)gmtTime
 {
@@ -244,15 +229,14 @@
 {
     if (layers)
     {
-        [_layersArray removeAllObjects];
-        [_layersArray addObjectsFromArray:layers];
+        _layersArray=layers;
     }
 }
 
 
 - (void)mapSDK:(WSISDK *)mapSDK layerTime:(NSString *)time
 {
-    [self setLayerTime:time];
+    //[self setLayerTime:time];
 }
 
 
@@ -260,8 +244,9 @@
 {
     if (overlays)
     {
-        [_overlaysArray removeAllObjects];
-        [_overlaysArray addObjectsFromArray:overlays];
+//        [_overlaysArray removeAllObjects];
+//        [_overlaysArray addObjectsFromArray:overlays];
+        _overlaysArray=overlays;
 		for (WSIMapObjectWrapper *overlay in overlays)
 		{
 			if ([overlay.getID isEqualToString:gWSISDK_OverlayTrafficIncidents])
@@ -280,8 +265,9 @@
 {
     if (categories)
     {
-        [_categoriesArray removeAllObjects];
-        [_categoriesArray addObjectsFromArray:categories];
+//        [_categoriesArray removeAllObjects];
+//        [_categoriesArray addObjectsFromArray:categories];
+        _categoriesArray=categories;
     }
 }
 
@@ -390,7 +376,7 @@
     //		// like that is using interpolation between the previous and current
     //		// locations to smoothly move the map / user location icon. Presumably,
     //		// something similar could be done here to emulate that?
-    //		[_wsiSDK.mapSDKView setCenterCoordinate:userLocation.coordinate animated:YES];
+    		[_wsiSDK.mapSDKView setCenterCoordinate:userLocation.coordinate animated:YES];
     //		//[self setTrafficIncidentsLocation:userLocation.coordinate];
     //	}
 }

@@ -24,7 +24,7 @@
     _wsiWrap=[[WSIAPIWrapper alloc] init];
     [_wsiWrap setDelegate:self];
     [_mapContainerView addSubview:[_wsiWrap MapView]];
-    
+    [_legendView setHidden:YES];
     
 }
 
@@ -45,6 +45,7 @@
 -(IBAction)changeUnits:(id)sender
 {
     //[_wsiWrap change]
+    [_wsiWrap switchUnits];
 }
 
 -(IBAction)playPastorFuture:(id)sender
@@ -90,14 +91,20 @@
 
 -(void)unitDisplay:(UIView*)legendview
 {
-    [_mapContainerView bringSubviewToFront:_legendView];
-    
-    CGRect legendViewFrame = legendview.frame;
-	legendViewFrame.origin.x = 0.5*(_legendView.frame.size.width - legendViewFrame.size.width);
-	legendViewFrame.origin.y = 0.5*(_legendView.frame.size.height - legendViewFrame.size.height);
-	legendview.frame = legendViewFrame;
-	[_legendView addSubview:legendview];
-	
+    if(legendview)
+    {
+        _legendView.hidden=NO;
+        [_mapContainerView bringSubviewToFront:_legendView];
+        if([[_legendView subviews] count]>0)
+            [(NSArray *)[_legendView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+        CGRect legendViewFrame = legendview.frame;
+        legendViewFrame.origin.x = 0.5*(_legendView.frame.size.width - legendViewFrame.size.width);
+        legendViewFrame.origin.y = 0.5*(_legendView.frame.size.height - legendViewFrame.size.height);
+        legendview.frame = legendViewFrame;
+        [_legendView addSubview:legendview];
+    }
+	else
+        _legendView.hidden=YES;
 }
 
 - (void)didReceiveMemoryWarning

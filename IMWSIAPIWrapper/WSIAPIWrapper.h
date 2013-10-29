@@ -47,14 +47,14 @@ static const double kMinDistanceDeltaToUpdateTrafficIncidentsMeters = 100.0;
 
 
 @property (nonatomic, strong) WSISDK *wsiSDK;
-@property(nonatomic,assign)NSInteger currentOverlayType;
-@property(nonatomic,assign)BOOL activeLayerhasFuture;
-@property (strong, nonatomic) NSMutableArray *layersArray;
-@property (strong, nonatomic) NSMutableArray *overlaysArray;
-@property (strong, nonatomic) NSMutableArray *categoriesArray;
+@property (nonatomic,assign)NSInteger currentOverlayType;
+@property (nonatomic,assign)BOOL activeLayerhasFuture;
+@property (strong, nonatomic) NSArray *layersArray;
+@property (strong, nonatomic) NSArray *overlaysArray;
+@property (strong, nonatomic) NSArray *categoriesArray;
 @property (strong, nonatomic) WSIMapObjectWrapper *activeLayer;
 @property (strong, nonatomic) id<WSISdKWrapperDelegate> delegate;
-@property (strong, nonatomic) id<WSISdKWrapperDelegate> delegate1;
+@property (nonatomic, assign) WSIUnitPreferences currentUnitPreference;
 
 
 
@@ -65,9 +65,9 @@ static const double kMinDistanceDeltaToUpdateTrafficIncidentsMeters = 100.0;
 - (void)pastFutureAction:(BOOL)pastSelected;
 - (void)startLooping;
 - (void)stopLooping;
-- (NSMutableArray *)overlaysList;
+- (NSArray *)overlaysList;
 - (void)transperancy:(NSUInteger)transperancyValue;
-
+- (void)switchUnits;
 
 
 @end
