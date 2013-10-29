@@ -54,6 +54,8 @@ static const double kMinDistanceDeltaToUpdateTrafficIncidentsMeters = 100.0;
 @property (strong, nonatomic) NSMutableArray *categoriesArray;
 @property (strong, nonatomic) WSIMapObjectWrapper *activeLayer;
 @property (strong, nonatomic) id<WSISdKWrapperDelegate> delegate;
+@property (strong, nonatomic) id<WSISdKWrapperDelegate> delegate1;
+
 
 
 - (MKMapView *)MapView;
