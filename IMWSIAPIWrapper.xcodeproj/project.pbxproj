@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3515B2DF18179EF4009540C0 /* WSIAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3515B2DE18179EF4009540C0 /* WSIAPIWrapper.m */; };
+		3515B2E11817A7D6009540C0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3515B2E01817A7D6009540C0 /* MapKit.framework */; };
+		3515B2E31817A7F0009540C0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3515B2E21817A7F0009540C0 /* CoreLocation.framework */; };
+		3515B2E71817B157009540C0 /* WSIPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3515B2E61817B157009540C0 /* WSIPinAnnotation.m */; };
+		3515B2E91817B2AE009540C0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3515B2E81817B2AE009540C0 /* SystemConfiguration.framework */; };
+		3515B2EB1817B2E8009540C0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3515B2EA1817B2E8009540C0 /* GLKit.framework */; };
+		3515B2F01817B7A3009540C0 /* WSIWrapperDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3515B2EF1817B7A3009540C0 /* WSIWrapperDemo.xib */; };
+		3515B2F41817CBE7009540C0 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3515B2F21817CBE7009540C0 /* SettingViewController.m */; };
+		3515B2F51817CBE7009540C0 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3515B2F31817CBE7009540C0 /* SettingViewController.xib */; };
+		35D0F57E181E72A300DFB641 /* WSISDKWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D0F57D181E72A300DFB641 /* WSISDKWeather.framework */; };
+		35FA60FA1819086E001A862A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35FA60F91819086E001A862A /* Localizable.strings */; };
+		F17BFBC11817953B00DB420B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17BFBC01817953B00DB420B /* Foundation.framework */; };
+		F17BFBC31817953B00DB420B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17BFBC21817953B00DB420B /* CoreGraphics.framework */; };
+		F17BFBC51817953B00DB420B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17BFBC41817953B00DB420B /* UIKit.framework */; };
+		F17BFBCB1817953B00DB420B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F17BFBC91817953B00DB420B /* InfoPlist.strings */; };
+		F17BFBCD1817953B00DB420B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17BFBCC1817953B00DB420B /* main.m */; };
+		F17BFBD11817953B00DB420B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17BFBD01817953B00DB420B /* AppDelegate.m */; };
+		F17BFBD41817953B00DB420B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17BFBD21817953B00DB420B /* Main.storyboard */; };
+		F17BFBD71817953B00DB420B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17BFBD61817953B00DB420B /* ViewController.m */; };
+		F17BFBD91817953C00DB420B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17BFBD81817953C00DB420B /* Images.xcassets */; };
+		F17BFBE01817953C00DB420B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17BFBDF1817953C00DB420B /* XCTest.framework */; };
+		F17BFBE11817953C00DB420B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17BFBC01817953B00DB420B /* Foundation.framework */; };
+		F17BFBE21817953C00DB420B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17BFBC41817953B00DB420B /* UIKit.framework */; };
+		F17BFBEA1817953C00DB420B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F17BFBE81817953C00DB420B /* InfoPlist.strings */; };
+		F17BFBEC1817953C00DB420B /* IMWSIAPIWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F17BFBEB1817953C00DB420B /* IMWSIAPIWrapperTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F17BFBE31817953C00DB420B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F17BFBB51817953B00DB420B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F17BFBBC1817953B00DB420B;
+			remoteInfo = IMWSIAPIWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3515B2DD18179EF4009540C0 /* WSIAPIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSIAPIWrapper.h; sourceTree = "<group>"; };
+		3515B2DE18179EF4009540C0 /* WSIAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSIAPIWrapper.m; sourceTree = "<group>"; };
+		3515B2E01817A7D6009540C0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3515B2E21817A7F0009540C0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3515B2E51817B157009540C0 /* WSIPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSIPinAnnotation.h; sourceTree = "<group>"; };
+		3515B2E61817B157009540C0 /* WSIPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSIPinAnnotation.m; sourceTree = "<group>"; };
+		3515B2E81817B2AE009540C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3515B2EA1817B2E8009540C0 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3515B2EF1817B7A3009540C0 /* WSIWrapperDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSIWrapperDemo.xib; sourceTree = "<group>"; };
+		3515B2F11817CBE7009540C0 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		3515B2F21817CBE7009540C0 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		3515B2F31817CBE7009540C0 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		35D0F57D181E72A300DFB641 /* WSISDKWeather.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WSISDKWeather.framework; path = IMWSIAPIWrapper/WSISDKWeather.framework; sourceTree = "<group>"; };
+		35FA60F91819086E001A862A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F17BFBBD1817953B00DB420B /* IMWSIAPIWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMWSIAPIWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17BFBC01817953B00DB420B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F17BFBC21817953B00DB420B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F17BFBC41817953B00DB420B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F17BFBC81817953B00DB420B /* IMWSIAPIWrapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IMWSIAPIWrapper-Info.plist"; sourceTree = "<group>"; };
+		F17BFBCA1817953B00DB420B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F17BFBCC1817953B00DB420B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F17BFBCE1817953B00DB420B /* IMWSIAPIWrapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMWSIAPIWrapper-Prefix.pch"; sourceTree = "<group>"; };
+		F17BFBCF1817953B00DB420B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F17BFBD01817953B00DB420B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F17BFBD31817953B00DB420B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F17BFBD51817953B00DB420B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F17BFBD61817953B00DB420B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F17BFBD81817953C00DB420B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F17BFBDE1817953C00DB420B /* IMWSIAPIWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMWSIAPIWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17BFBDF1817953C00DB420B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F17BFBE71817953C00DB420B /* IMWSIAPIWrapperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IMWSIAPIWrapperTests-Info.plist"; sourceTree = "<group>"; };
+		F17BFBE91817953C00DB420B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F17BFBEB1817953C00DB420B /* IMWSIAPIWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMWSIAPIWrapperTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F17BFBBA1817953B00DB420B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D0F57E181E72A300DFB641 /* WSISDKWeather.framework in Frameworks */,
+				3515B2EB1817B2E8009540C0 /* GLKit.framework in Frameworks */,
+				3515B2E91817B2AE009540C0 /* SystemConfiguration.framework in Frameworks */,
+				3515B2E31817A7F0009540C0 /* CoreLocation.framework in Frameworks */,
+				3515B2E11817A7D6009540C0 /* MapKit.framework in Frameworks */,
+				F17BFBC31817953B00DB420B /* CoreGraphics.framework in Frameworks */,
+				F17BFBC51817953B00DB420B /* UIKit.framework in Frameworks */,
+				F17BFBC11817953B00DB420B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17BFBDB1817953C00DB420B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17BFBE01817953C00DB420B /* XCTest.framework in Frameworks */,
+				F17BFBE21817953C00DB420B /* UIKit.framework in Frameworks */,
+				F17BFBE11817953C00DB420B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3515B2E41817B0AC009540C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3515B2E51817B157009540C0 /* WSIPinAnnotation.h */,
+				3515B2E61817B157009540C0 /* WSIPinAnnotation.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		3515B2EC1817B5D9009540C0 /* NIB */ = {
+			isa = PBXGroup;
+			children = (
+				3515B2F31817CBE7009540C0 /* SettingViewController.xib */,
+				3515B2EF1817B7A3009540C0 /* WSIWrapperDemo.xib */,
+			);
+			name = NIB;
+			sourceTree = "<group>";
+		};
+		35D1321F1818015000567A76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		35FA60ED1819063C001A862A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				35FA60F91819086E001A862A /* Localizable.strings */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		F17BFBB41817953B00DB420B = {
+			isa = PBXGroup;
+			children = (
+				F17BFBC61817953B00DB420B /* IMWSIAPIWrapper */,
+				F17BFBE51817953C00DB420B /* IMWSIAPIWrapperTests */,
+				F17BFBBF1817953B00DB420B /* Frameworks */,
+				F17BFBBE1817953B00DB420B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F17BFBBE1817953B00DB420B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F17BFBBD1817953B00DB420B /* IMWSIAPIWrapper.app */,
+				F17BFBDE1817953C00DB420B /* IMWSIAPIWrapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F17BFBBF1817953B00DB420B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35D0F57D181E72A300DFB641 /* WSISDKWeather.framework */,
+				3515B2EA1817B2E8009540C0 /* GLKit.framework */,
+				3515B2E81817B2AE009540C0 /* SystemConfiguration.framework */,
+				3515B2E21817A7F0009540C0 /* CoreLocation.framework */,
+				3515B2E01817A7D6009540C0 /* MapKit.framework */,
+				F17BFBC01817953B00DB420B /* Foundation.framework */,
+				F17BFBC21817953B00DB420B /* CoreGraphics.framework */,
+				F17BFBC41817953B00DB420B /* UIKit.framework */,
+				F17BFBDF1817953C00DB420B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F17BFBC61817953B00DB420B /* IMWSIAPIWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				35FA60ED1819063C001A862A /* Localization */,
+				35D1321F1818015000567A76 /* Model */,
+				3515B2EC1817B5D9009540C0 /* NIB */,
+				3515B2E41817B0AC009540C0 /* Utils */,
+				F17BFBCF1817953B00DB420B /* AppDelegate.h */,
+				F17BFBD01817953B00DB420B /* AppDelegate.m */,
+				F17BFBD21817953B00DB420B /* Main.storyboard */,
+				F17BFBD51817953B00DB420B /* ViewController.h */,
+				F17BFBD61817953B00DB420B /* ViewController.m */,
+				F17BFBD81817953C00DB420B /* Images.xcassets */,
+				F17BFBC71817953B00DB420B /* Supporting Files */,
+				3515B2DD18179EF4009540C0 /* WSIAPIWrapper.h */,
+				3515B2DE18179EF4009540C0 /* WSIAPIWrapper.m */,
+				3515B2F11817CBE7009540C0 /* SettingViewController.h */,
+				3515B2F21817CBE7009540C0 /* SettingViewController.m */,
+			);
+			path = IMWSIAPIWrapper;
+			sourceTree = "<group>";
+		};
+		F17BFBC71817953B00DB420B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F17BFBC81817953B00DB420B /* IMWSIAPIWrapper-Info.plist */,
+				F17BFBC91817953B00DB420B /* InfoPlist.strings */,
+				F17BFBCC1817953B00DB420B /* main.m */,
+				F17BFBCE1817953B00DB420B /* IMWSIAPIWrapper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F17BFBE51817953C00DB420B /* IMWSIAPIWrapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				F17BFBEB1817953C00DB420B /* IMWSIAPIWrapperTests.m */,
+				F17BFBE61817953C00DB420B /* Supporting Files */,
+			);
+			path = IMWSIAPIWrapperTests;
+			sourceTree = "<group>";
+		};
+		F17BFBE61817953C00DB420B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F17BFBE71817953C00DB420B /* IMWSIAPIWrapperTests-Info.plist */,
+				F17BFBE81817953C00DB420B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F17BFBBC1817953B00DB420B /* IMWSIAPIWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17BFBEF1817953C00DB420B /* Build configuration list for PBXNativeTarget "IMWSIAPIWrapper" */;
+			buildPhases = (
+				F17BFBB91817953B00DB420B /* Sources */,
+				F17BFBBA1817953B00DB420B /* Frameworks */,
+				F17BFBBB1817953B00DB420B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMWSIAPIWrapper;
+			productName = IMWSIAPIWrapper;
+			productReference = F17BFBBD1817953B00DB420B /* IMWSIAPIWrapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F17BFBDD1817953C00DB420B /* IMWSIAPIWrapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17BFBF21817953C00DB420B /* Build configuration list for PBXNativeTarget "IMWSIAPIWrapperTests" */;
+			buildPhases = (
+				F17BFBDA1817953C00DB420B /* Sources */,
+				F17BFBDB1817953C00DB420B /* Frameworks */,
+				F17BFBDC1817953C00DB420B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F17BFBE41817953C00DB420B /* PBXTargetDependency */,
+			);
+			name = IMWSIAPIWrapperTests;
+			productName = IMWSIAPIWrapperTests;
+			productReference = F17BFBDE1817953C00DB420B /* IMWSIAPIWrapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F17BFBB51817953B00DB420B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Impiger Technologies";
+				TargetAttributes = {
+					F17BFBBC1817953B00DB420B = {
+						DevelopmentTeam = UW7469NL6K;
+					};
+					F17BFBDD1817953C00DB420B = {
+						TestTargetID = F17BFBBC1817953B00DB420B;
+					};
+				};
+			};
+			buildConfigurationList = F17BFBB81817953B00DB420B /* Build configuration list for PBXProject "IMWSIAPIWrapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = F17BFBB41817953B00DB420B;
+			productRefGroup = F17BFBBE1817953B00DB420B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F17BFBBC1817953B00DB420B /* IMWSIAPIWrapper */,
+				F17BFBDD1817953C00DB420B /* IMWSIAPIWrapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F17BFBBB1817953B00DB420B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3515B2F01817B7A3009540C0 /* WSIWrapperDemo.xib in Resources */,
+				35FA60FA1819086E001A862A /* Localizable.strings in Resources */,
+				3515B2F51817CBE7009540C0 /* SettingViewController.xib in Resources */,
+				F17BFBD91817953C00DB420B /* Images.xcassets in Resources */,
+				F17BFBCB1817953B00DB420B /* InfoPlist.strings in Resources */,
+				F17BFBD41817953B00DB420B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17BFBDC1817953C00DB420B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17BFBEA1817953C00DB420B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F17BFBB91817953B00DB420B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3515B2DF18179EF4009540C0 /* WSIAPIWrapper.m in Sources */,
+				F17BFBD71817953B00DB420B /* ViewController.m in Sources */,
+				3515B2E71817B157009540C0 /* WSIPinAnnotation.m in Sources */,
+				F17BFBD11817953B00DB420B /* AppDelegate.m in Sources */,
+				F17BFBCD1817953B00DB420B /* main.m in Sources */,
+				3515B2F41817CBE7009540C0 /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17BFBDA1817953C00DB420B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17BFBEC1817953C00DB420B /* IMWSIAPIWrapperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F17BFBE41817953C00DB420B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F17BFBBC1817953B00DB420B /* IMWSIAPIWrapper */;
+			targetProxy = F17BFBE31817953C00DB420B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F17BFBC91817953B00DB420B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17BFBCA1817953B00DB420B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F17BFBD21817953B00DB420B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17BFBD31817953B00DB420B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F17BFBE81817953C00DB420B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17BFBE91817953C00DB420B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F17BFBED1817953C00DB420B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Manju Chandran (LG9794Q23K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manju Chandran (LG9794Q23K)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "IS_WEATHERSDK_APP=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "522FBF6B-E63E-4AE6-A191-348CA4470297";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F17BFBEE1817953C00DB420B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Manju Chandran (LG9794Q23K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manju Chandran (LG9794Q23K)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				"ENABLE_NS_ASSERTIONS[arch=*]" = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "IS_WEATHERSDK_APP=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "522FBF6B-E63E-4AE6-A191-348CA4470297";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F17BFBF01817953C00DB420B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Manju Chandran (LG9794Q23K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manju Chandran (LG9794Q23K)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Raj/Manju/Manju/WeatherAPIs/IMWSIAPIWrapper/IMWSIAPIWrapper,
+					/Users/Raj/Manju/Manju/WeatherAPIs/develop/IMWSIAPIWrapper,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMWSIAPIWrapper/IMWSIAPIWrapper-Prefix.pch";
+				INFOPLIST_FILE = "IMWSIAPIWrapper/IMWSIAPIWrapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "522FBF6B-E63E-4AE6-A191-348CA4470297";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F17BFBF11817953C00DB420B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Manju Chandran (LG9794Q23K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manju Chandran (LG9794Q23K)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Raj/Manju/Manju/WeatherAPIs/IMWSIAPIWrapper/IMWSIAPIWrapper,
+					/Users/Raj/Manju/Manju/WeatherAPIs/develop/IMWSIAPIWrapper,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMWSIAPIWrapper/IMWSIAPIWrapper-Prefix.pch";
+				INFOPLIST_FILE = "IMWSIAPIWrapper/IMWSIAPIWrapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "522FBF6B-E63E-4AE6-A191-348CA4470297";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F17BFBF31817953C00DB420B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IMWSIAPIWrapper.app/IMWSIAPIWrapper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/janakiraman/Projects/IMWSIAPIWrapper/IMWSIAPIWrapper,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMWSIAPIWrapper/IMWSIAPIWrapper-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IMWSIAPIWrapperTests/IMWSIAPIWrapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F17BFBF41817953C00DB420B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IMWSIAPIWrapper.app/IMWSIAPIWrapper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/janakiraman/Projects/IMWSIAPIWrapper/IMWSIAPIWrapper,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMWSIAPIWrapper/IMWSIAPIWrapper-Prefix.pch";
+				INFOPLIST_FILE = "IMWSIAPIWrapperTests/IMWSIAPIWrapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F17BFBB81817953B00DB420B /* Build configuration list for PBXProject "IMWSIAPIWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17BFBED1817953C00DB420B /* Debug */,
+				F17BFBEE1817953C00DB420B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17BFBEF1817953C00DB420B /* Build configuration list for PBXNativeTarget "IMWSIAPIWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17BFBF01817953C00DB420B /* Debug */,
+				F17BFBF11817953C00DB420B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17BFBF21817953C00DB420B /* Build configuration list for PBXNativeTarget "IMWSIAPIWrapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17BFBF31817953C00DB420B /* Debug */,
+				F17BFBF41817953C00DB420B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F17BFBB51817953B00DB420B /* Project object */;
+}
