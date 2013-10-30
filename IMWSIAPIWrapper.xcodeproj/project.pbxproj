@@ -441,6 +441,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Manju Chandran (LG9794Q23K)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manju Chandran (LG9794Q23K)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Raj/Manju/Manju/WeatherAPIs/Mainbranch/WSIAPIWrapper/IMWSIAPIWrapper;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -505,8 +506,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manju Chandran (LG9794Q23K)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Raj/Manju/Manju/WeatherAPIs/IMWSIAPIWrapper/IMWSIAPIWrapper,
-					/Users/Raj/Manju/Manju/WeatherAPIs/develop/IMWSIAPIWrapper,
+					/Users/Raj/Manju/Manju/WeatherAPIs/Mainbranch/WSIAPIWrapper/IMWSIAPIWrapper,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMWSIAPIWrapper/IMWSIAPIWrapper-Prefix.pch";
@@ -526,8 +526,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manju Chandran (LG9794Q23K)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Raj/Manju/Manju/WeatherAPIs/IMWSIAPIWrapper/IMWSIAPIWrapper,
-					/Users/Raj/Manju/Manju/WeatherAPIs/develop/IMWSIAPIWrapper,
+					/Users/Raj/Manju/Manju/WeatherAPIs/Mainbranch/WSIAPIWrapper/IMWSIAPIWrapper,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMWSIAPIWrapper/IMWSIAPIWrapper-Prefix.pch";

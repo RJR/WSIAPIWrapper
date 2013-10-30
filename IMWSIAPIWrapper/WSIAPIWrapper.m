@@ -12,11 +12,7 @@
 
 #import "WSIAPIWrapper.h"
 
-#ifdef IS_TRAFFICSDK_APP
-#import <WSISDKTraffic/WSISDK.h>
-#import <WSISDKTraffic/WSIMapObjectWrapper.h>
-static NSString * const kSDKTypeLabel = @"TRAFFIC SDK";
-#endif
+
 
 @implementation WSIAPIWrapper
 
@@ -38,6 +34,23 @@ static NSString * const kSDKTypeLabel = @"TRAFFIC SDK";
     [_wsiSDK.mapSDKView setMapType:kDefaultMapType];
     _currentUnitPreference=ENGLISH;
     return _wsiSDK.mapSDKView;
+}
+
+- (void)mapMode:(NSInteger)mode
+{
+    switch (mode) {
+        case mapModeStandard:
+            _wsiSDK.mapSDKView.mapType=MKMapTypeStandard;
+            break;
+        case mapModeSatellite:
+            _wsiSDK.mapSDKView.mapType=mapModeSatellite;
+            break;
+        case mapModeHybrid:
+            _wsiSDK.mapSDKView.mapType=MKMapTypeHybrid;
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)showWeather:(NSMutableArray *)categories
@@ -293,7 +306,7 @@ static NSString * const kSDKTypeLabel = @"TRAFFIC SDK";
     //	if (_mapMode == MM_Center)
     //	{
     //		// re-center traffic incidents on new map center location
-    //		//[self setTrafficIncidentsLocation:_wsiSDK.mapSDKView.region.center];
+      //      [self setTrafficIncidentsLocation:_wsiSDK.mapSDKView.region.center];
     //	}
 }
 

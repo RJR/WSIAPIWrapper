@@ -41,7 +41,7 @@
                         <action selector="showLayers:" destination="-1" eventType="touchUpInside" id="m7R-qz-Yxz"/>
                     </connections>
                 </button>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n2Z-Wp-Y58">
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="n2Z-Wp-Y58">
                     <rect key="frame" x="9" y="382" width="185" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <segments>
@@ -49,6 +49,9 @@
                         <segment title="Satellite"/>
                         <segment title="Hybrid"/>
                     </segments>
+                    <connections>
+                        <action selector="mapMode:" destination="-1" eventType="valueChanged" id="TLp-l4-F0d"/>
+                    </connections>
                 </segmentedControl>
                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vDf-dT-h7C">
                     <rect key="frame" x="23" y="293" width="159" height="34"/>

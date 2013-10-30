@@ -20,6 +20,13 @@ typedef enum
     overlayTypeCategory
 }eObjectType;
 
+typedef enum
+{
+    mapModeStandard=0,
+    mapModeSatellite,
+    mapModeHybrid
+}eMapType;
+
 static const float kFrameScaleFactor 		= 1.30f;
 
 static const int kMaxLayers 				= 20;
@@ -59,6 +66,7 @@ static const double kMinDistanceDeltaToUpdateTrafficIncidentsMeters = 100.0;
 
 
 - (MKMapView *)MapView;
+- (void)mapMode:(NSInteger)mode;
 - (void)showWeather:(NSMutableArray*)categories;
 - (void)spotLocation;
 - (void)updateUserLocationVisibility;

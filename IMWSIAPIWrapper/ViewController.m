@@ -73,7 +73,8 @@
 
 -(IBAction)mapMode:(id)sender
 {
-    
+    UISegmentedControl *mapModeSwitch=(UISegmentedControl*)sender;
+    [_wsiWrap mapMode:[mapModeSwitch selectedSegmentIndex]];
 }
 
 #pragma Mark SettingViewController Delegate
